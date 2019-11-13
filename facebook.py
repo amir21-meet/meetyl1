@@ -8,6 +8,26 @@ class User(object):
 		self.friends_list = friends_list
 		self.posts = posts
 	def add_friend(self,email):
-		friends_list=friends_list(email)
-		
+		self.friends_list.append(email)
+		print(self.name+"	has added " + email +" as  a friend")
+	def remove_friend(self,email):
+		self.friends_list.remove(email)
+		print(self.name+"xhas removed " + email +" as  a friend")
+	def post(self,text):
+		self.posts.append(text)
+		print(self.name +"has posted:" + text)
+	def get_userinfo(self):
+		print("Name:" + "self.name")
+		print("Email:" + self.email)
+		print("Password:" + self.password)
+		print("Friends:" + str(self.friends_list))
+		print("Posts:" + str(self.posts))
+
+user1 = User("Amir","amirsamidarwish@gmail.com","a0522906096D",0,0)
+user2 = User("Celine","celineyaghi@gmail.com","cece",0,0)
+
+user1.add_friend(user2.email)
+user1.post("Hi Ana Celine")
+user1.get_userinfo()
+user1.remove_friend(user2.email)
 
