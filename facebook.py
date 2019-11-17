@@ -1,3 +1,11 @@
+class Posts(object):
+	def __init__(self,name,day,date,message):
+		self.name = name
+		self.day = day
+		self.date = date
+		self.message = message
+
+
 class User(object):
 	def __init__(self,name,email,password,friends_list,posts):
 		friends_list=[]
@@ -14,10 +22,13 @@ class User(object):
 		self.friends_list.remove(email)
 		print(self.name+"xhas removed " + email +" as  a friend")
 	def post(self,text):
-		self.posts.append(text)
+
+		post1 = Posts("Amir","Sunday","17/11/2019", text)
+		self.posts.append(post1)
+		print(self.posts)
 		print(self.name +"has posted:" + text)
 	def get_userinfo(self):
-		print("Name:" + "self.name")
+		print("Name:" + self.name)
 		print("Email:" + self.email)
 		print("Password:" + self.password)
 		print("Friends:" + str(self.friends_list))
@@ -30,4 +41,5 @@ user1.add_friend(user2.email)
 user1.post("Hi Ana Celine")
 user1.get_userinfo()
 user1.remove_friend(user2.email)
+
 
