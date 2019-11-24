@@ -5,7 +5,8 @@ class Posts(object):
 		self.date = date
 		self.message = message
 
-
+x=1
+print(x)
 class User(object):
 	def __init__(self,name,email,password,friends_list,posts):
 		friends_list=[]
