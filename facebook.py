@@ -224,7 +224,186 @@ if Profile in users_posts:
 		input("YourPost: ")
 		user_post.append(user_post)
 
-
+Profile = input("MyProfile,Security,Friends,Posts,Logout :")
+if Profile in profile:
+	print("-------------------------Your Profile----------------------------")
+	print("Name: "+Name)
+	print("Password: "+Password)
+	print("Friends:"+str(friends_list))
+if Profile in logout:
+	print("-----------------------------Thank You-------------------------------")
+	exit()
+if Profile in security:
+	input("Do you want to change Your Password? ")
+	if yes:
+		input("Current Password")
+		if users_password:
+			input("New Password")
+		else:
+			print("Try Again")
+if Profile in friends:
+	print(friends_list)
+	input("Do you want To Add a friend? ")
+	if yes:
+		print(Options)
+	else:
+		print("-__-")
+if Profile in users_posts:
+	print()
+	input("Do You Want To Post Something?yes/no")
+	if yes:
+		input("YourPost: ")
+		user_post.append(user_post)
+Profile = input("MyProfile,Security,Friends,Posts,Logout :")
+if Profile in profile:
+	print("-------------------------Your Profile----------------------------")
+	print("Name: "+Name)
+	print("Password: "+Password)
+	print("Friends:"+str(friends_list))
+if Profile in logout:
+	print("-----------------------------Thank You-------------------------------")
+	exit()
+if Profile in security:
+	input("Do you want to change Your Password? ")
+	if yes:
+		input("Current Password")
+		if users_password:
+			input("New Password")
+		else:
+			print("Try Again")
+if Profile in friends:
+	print(friends_list)
+	input("Do you want To Add a friend? ")
+	if yes:
+		print(Options)
+	else:
+		print("-__-")
+if Profile in users_posts:
+	print()
+	input("Do You Want To Post Something?yes/no")
+	if yes:
+		input("YourPost: ")
+		user_post.append(user_post)
+Profile = input("MyProfile,Security,Friends,Posts,Logout :")
+if Profile in profile:
+	print("-------------------------Your Profile----------------------------")
+	print("Name: "+Name)
+	print("Password: "+Password)
+	print("Friends:"+str(friends_list))
+if Profile in logout:
+	print("-----------------------------Thank You-------------------------------")
+	exit()
+if Profile in security:
+	input("Do you want to change Your Password? ")
+	if yes:
+		input("Current Password")
+		if users_password:
+			input("New Password")
+		else:
+			print("Try Again")
+if Profile in friends:
+	print(friends_list)
+	input("Do you want To Add a friend? ")
+	if yes:
+		print(Options)
+	else:
+		print("-__-")
+if Profile in users_posts:
+	print()
+	input("Do You Want To Post Something?yes/no")
+	if yes:
+		input("YourPost: ")
+		user_post.append(user_post)
+Profile = input("MyProfile,Security,Friends,Posts,Logout :")
+if Profile in profile:
+	print("-------------------------Your Profile----------------------------")
+	print("Name: "+Name)
+	print("Password: "+Password)
+	print("Friends:"+str(friends_list))
+if Profile in logout:
+	print("-----------------------------Thank You-------------------------------")
+	exit()
+if Profile in security:
+	input("Do you want to change Your Password? ")
+	if yes:
+		input("Current Password")
+		if users_password:
+			input("New Password")
+		else:
+			print("Try Again")
+if Profile in friends:
+	print(friends_list)
+	input("Do you want To Add a friend? ")
+	if yes:
+		print(Options)
+	else:
+		print("-__-")
+if Profile in users_posts:
+	print()
+	input("Do You Want To Post Something?yes/no")
+	if yes:
+		input("YourPost: ")
+		user_post.append(user_post)
+Profile = input("MyProfile,Security,Friends,Posts,Logout :")
+if Profile in profile:
+	print("-------------------------Your Profile----------------------------")
+	print("Name: "+Name)
+	print("Password: "+Password)
+	print("Friends:"+str(friends_list))
+if Profile in logout:
+	print("-----------------------------Thank You-------------------------------")
+	exit()
+if Profile in security:
+	input("Do you want to change Your Password? ")
+	if yes:
+		input("Current Password")
+		if users_password:
+			input("New Password")
+		else:
+			print("Try Again")
+if Profile in friends:
+	print(friends_list)
+	input("Do you want To Add a friend? ")
+	if yes:
+		print(Options)
+	else:
+		print("-__-")
+if Profile in users_posts:
+	print()
+	input("Do You Want To Post Something?yes/no")
+	if yes:
+		input("YourPost: ")
+		user_post.append(user_post)
+Profile = input("MyProfile,Security,Friends,Posts,Logout :")
+if Profile in profile:
+	print("-------------------------Your Profile----------------------------")
+	print("Name: "+Name)
+	print("Password: "+Password)
+	print("Friends:"+str(friends_list))
+if Profile in logout:
+	print("-----------------------------Thank You-------------------------------")
+	exit()
+if Profile in security:
+	input("Do you want to change Your Password? ")
+	if yes:
+		input("Current Password")
+		if users_password:
+			input("New Password")
+		else:
+			print("Try Again")
+if Profile in friends:
+	print(friends_list)
+	input("Do you want To Add a friend? ")
+	if yes:
+		print(Options)
+	else:
+		print("-__-")
+if Profile in users_posts:
+	print()
+	input("Do You Want To Post Something?yes/no")
+	if yes:
+		input("YourPost: ")
+		user_post.append(user_post)
 
 
 
