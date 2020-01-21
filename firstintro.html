@@ -4,18 +4,23 @@
    <link rel="stylesheet" href="firstintro.css">
 </head>
 <body>
+<input type="button" value="PLAY"  onclick="play()">
+<audio id="audio" src="doors.mp3" ></audio>
 <div class="backimg">
 	<img src="first intro.jpg" height="800px" width="1500px">
 </div>
 <div class="backbutton">
-<a href="url">Play </a>
+<a href="doors.html">Let's Go </a>
 
 </div>
 
+<script type="text/javascript">
+	function play(){
+       var audio = document.getElementById("audio");
+       audio.play();
+                 }
 
-
-
-
+</script>
 
 </body>
 

@@ -4,19 +4,23 @@
    <link rel="stylesheet" href="momo.css">
 </head>
 <body>
+<input type="button" value="PLAY"  onclick="play()">
+<audio id="audio" src="soundtrack.mp3" ></audio>
 <div class="backimg">
 	<h1>Momo's Terrible Horrible House</h1>
 </div>
 <div class="backbutton">
-<a href="url">Play </a>
+<a href="firstintro.html">Play </a>
 
 </div>
 
+<script type="text/javascript">
+	function play(){
+       var audio = document.getElementById("audio");
+       audio.play();
+                 }
 
-
-
-
-
+</script>
 </body>
 
 
