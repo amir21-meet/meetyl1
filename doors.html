@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <link rel="stylesheet" href="firstintro.css">
+   <link rel="stylesheet" href="doors.css">
 </head>
 <body>
-<input type="button" value="PLAY"  onclick="play()">
-<audio id="audio" src="doors.mp3" ></audio>
+<audio src="doors.mp3" id="my_audio" loop="loop" autoplay="autoplay"></audio>
 <div class="backimg">
 	<img src="doors.jpg" height="800px" width="1500px">
 </div>
@@ -16,12 +15,10 @@
 </div>
 
 <script type="text/javascript">
-	function play(){
-       var audio = document.getElementById("audio");
-       audio.play();
-                 }
-
-</script>
+    window.onload=function(){
+      document.getElementById("my_audio").play();
+    }
+  </script>
 
 </body>
 

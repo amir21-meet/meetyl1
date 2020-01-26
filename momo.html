@@ -4,6 +4,7 @@
    <link rel="stylesheet" href="momo.css">
 </head>
 <body>
+<audio src="soundtrack.mp3" id="my_audio" loop="loop" autoplay="autoplay"></audio>
 
 <div class="backimg">
 	<h1>Momo's Terrible Horrible House</h1>
@@ -12,7 +13,11 @@
 <a href="firstintro.html">Play </a>
 
 </div>
-
+<script type="text/javascript">
+    window.onload=function(){
+      document.getElementById("my_audio").play();
+    }
+  </script>
 
 </body>
 

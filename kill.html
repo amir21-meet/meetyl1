@@ -4,8 +4,7 @@
    <link rel="stylesheet" href="kill.css">
 </head>
 <body>
-<input type="button" value="PLAY"  onclick="play()">
-<audio id="audio" src="gameover.wav" ></audio>
+<audio src="gameover.wav" id="my_audio" loop="loop" autoplay="autoplay"></audio>
 <div class="backimg">
 	<h1>Game Over!!</h1>
 </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -15,12 +14,10 @@
 </div>
 
 <script type="text/javascript">
-	function play(){
-       var audio = document.getElementById("audio");
-       audio.play();
-                 }
-
-</script>
+    window.onload=function(){
+      document.getElementById("my_audio").play();
+    }
+  </script>
 
 </body>
 

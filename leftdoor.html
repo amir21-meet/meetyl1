@@ -4,20 +4,20 @@
   	<link rel="stylesheet" href="leftdoor.css">
 </head>
  <body>
-  <input type="button" value="PLAY"  onclick="play()"> <audio
-id="audio" src="back.wav" ></audio> <div class="backimg"> <h1>You Are Already
+<audio src="back.wav" id="my_audio" loop="loop" autoplay="autoplay"></audio>
+ <div class="backimg"> <h1>You Are Already
 Dead</h1>
-</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div class="backbutton"> <a href="opendoor.html">Open The Door----!!</a> <a
 href="doors	.html">!!---Go Back</a>
 
 </div>
 
 <script type="text/javascript">
-	function play(){
-       var audio = document.getElementById("audio");
-       audio.play();
-                 }
+    window.onload=function(){
+      document.getElementById("my_audio").play();
+    }
+  </script>
 
 </script>
 

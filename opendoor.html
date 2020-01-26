@@ -4,8 +4,7 @@
    <link rel="stylesheet" href="opendoor.css">
 </head>
 <body>
-<input type="button" value="PLAY"  onclick="play()">
-<audio id="audio" src="sound2.mp3" ></audio>
+<audio src="sound2.mp3" id="my_audio" loop="loop" autoplay="autoplay"></audio>
 <div class="backimg">
 	<h1>You Escaped Succesfully From Momo's House</h1>
 </div><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -15,12 +14,10 @@
 </div>
 
 <script type="text/javascript">
-	function play(){
-       var audio = document.getElementById("audio");
-       audio.play();
-                 }
-
-</script>
+    window.onload=function(){
+      document.getElementById("my_audio").play();
+    }
+  </script>
 
 </body>
 

@@ -1,12 +1,12 @@
 .backimg{
   text-align: center;
-  color: green;
+  color: black;
   margin-top: 50px;
   font-size: 68px;
 }
 
 body{
-  background-image: url(escape.jpg);
+  background-image: url(escape.JPG);
 	background-size: 2000px 1000px;
 
 }

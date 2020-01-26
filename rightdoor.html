@@ -4,8 +4,7 @@
   	<link rel="stylesheet" href="rightdoor.css">
 </head>
  <body>
-  <input type="button" value="PLAY"  onclick="play()"> <audio
-id="audio" src="beds.wav" ></audio> 
+<audio src="beds.wav" id="my_audio"  autoplay="autoplay"></audio>
 <div class="backimg">
  <h1>Sleep Here!!</h1>
 </div><br>
@@ -15,12 +14,10 @@ href="kill.html">!!---Go Back</a>
 </div>
 
 <script type="text/javascript">
-	function play(){
-       var audio = document.getElementById("audio");
-       audio.play();
-                 }
-
-</script>
+    window.onload=function(){
+      document.getElementById("my_audio").play();
+    }
+  </script>
 
 </body>
 
