@@ -1,46 +1,91 @@
 <html>
 <head>
+  <link rel="stylesheet" href="time.css">
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-250px, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-   <body>
-       <div class="container-fluid">
-           <div class="row">
-               <div class="col-6">
-                   <p>Cristiano Ronaldo</p>
-               </div>
+   <body><center>
+   	<form>
+  <div class="form-group">
+    <label  width="250px"for="exampleInputEmail1">Email address</label>
+    <input width="150px"type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Which Hours  Are You Available?</label><br>
+<input type="time" id="appt" name="appt"
+       min="09:00" max="18:00" required>
+           <label>-</label>
+           <input type="time" id="appt" name="appt"
+       min="09:00" max="18:00" required>
+  </div>
+
+<label for="start">Start date:</label>
+
+<input type="date" id="start" name="trip-start"
+       value="2020-01-01"
+       min="2018-01-01" max="2020-12-31"><br>
+  
+Type Your Activity:<br> 
+  
+<input type="activity" name="activity">
+  
+<p>Importance</p> 
+   <label for="quantity">(between 1 and 5):</label>
+<input type="number" id="quantity" name="quantity" min="1" max="5"> 
+<BR>
+Type Your Activity:<br> 
+  
+<input type="activity" name="activity">
+  
+<p>Importance</p> 
+   <label for="quantity">(between 1 and 5):</label>
+<input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+Type Your Activity:<br> 
+  
+<input type="activity" name="activity">
+  
+<p>Importance</p> 
+   <label for="quantity">(between 1 and 5):</label>
+<input type="number" id="quantity" name="quantity" min="1" max="5"><br.
 
 
-               <div class="col-6">
-                   <p ><a href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo"><img src="ronaldo.jpg" height="250px width250px"></a></p>
-               </div>
-           </div> 
+<button ondblclick="My_list()">Add</button> <br><br>
 
 
-           <div class="row">
-               <div class="col-6">
-                   <p>Lional Messi</p>
-               </div>
+<form action="/action_page.php">
+  <label for="img">Select image:</label>
+  <input type="file" id="img" name="img" accept="image/*">
+  <input type="submit">
+</form>
 
+<p><strong>Note:</strong> Because of security issues, this example will not allow you to upload files.</p>
+<script> 
+   
+function My_list()  
+{ 
+   var d = document.getElementById("myCourses"); 
+   var option = document.createElement("option"); 
+   option.text = "Interview"; 
+   d.add(option, d[1]<h1>The input accept attribute</h1>
 
-               <div class="col-6">
-                   <p ><a href="https://en.wikipedia.org/wiki/Lionel_Messi"><img src="messi.jpg" height="250px width250px"></a></p>
-               </div>
-           </div>
-                      <div class="row">
-               <div class="col-6">
-                   <p>Antione Greizmann</p>
-               </div>
+<form action="/action_page.php">
+  <label for="img">Select image:</label>
+  <input type="file" id="img" name="img" accept="image/*">
+  <input type="submit">
+</form>
 
+<p><strong>Note:</strong> Because of security issues, this example will not allow you to upload files.</p>} 
+   
+</script><br>
+         <button type="submit" class="btn btn-primary">Submit</button><br>
 
-               <div class="col-6">
-                   <p ><a href="https://en.wikipedia.org/wiki/Antoine_Griezmann"><img src="mann.jpg" height="250px width250px"></a></p>
-               </div>
-       </div>
+</form>
+</center>
    </body>
 </html>
