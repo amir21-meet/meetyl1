@@ -2,6 +2,7 @@
 <head>
   <link rel="stylesheet" href="time.css">
   <title>Bootstrap Example</title>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-250px, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -9,13 +10,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-   <body><center>
-   	<form>
-  <div class="form-group">
-    <label  width="250px"for="exampleInputEmail1">Email address</label>
-    <input width="150px"type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
+   <body>
+   	<script src="time.js">
+</script>
+
+   	<center>
+   <form action="bexercise.htm">>
   <div class="form-group">
     <label for="exampleInputPassword1">Which Hours  Are You Available?</label><br>
 <input type="time" id="appt" name="appt"
@@ -52,40 +52,23 @@ Type Your Activity:<br>
   
 <p>Importance</p> 
    <label for="quantity">(between 1 and 5):</label>
-<input type="number" id="quantity" name="quantity" min="1" max="5"><br.
+<input type="number" id="quantity" name="quantity" min="1" max="5"><br>
 
 
-<button ondblclick="My_list()">Add</button> <br><br>
+<button >Add</button> <br><br>
 
-
-<form action="/action_page.php">
-  <label for="img">Select image:</label>
-  <input type="file" id="img" name="img" accept="image/*">
-  <input type="submit">
-</form>
 
 <p><strong>Note:</strong> Because of security issues, this example will not allow you to upload files.</p>
-<script> 
-   
-function My_list()  
-{ 
-   var d = document.getElementById("myCourses"); 
-   var option = document.createElement("option"); 
-   option.text = "Interview"; 
-   d.add(option, d[1]<h1>The input accept attribute</h1>
-
-<form action="/action_page.php">
-  <label for="img">Select image:</label>
-  <input type="file" id="img" name="img" accept="image/*">
-  <input type="submit">
-</form>
-
-<p><strong>Note:</strong> Because of security issues, this example will not allow you to upload files.</p>} 
-   
-</script><br>
+<br>
          <button type="submit" class="btn btn-primary">Submit</button><br>
 
 </form>
 </center>
+<script type="text/javascript">
+	var url = window.location.toString().split(".htm?");
+	var values = url[1].split("&");
+	alert(values[0]);
+	alert(values[1])
+</script>
    </body>
 </html>
