@@ -1,0 +1,74 @@
+<html>
+<head>
+  <link rel="stylesheet" href="time.css">
+  <title>Bootstrap Example</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-250px, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+   <body>
+   	<script src="time.js">
+</script>
+
+   	<center>
+   <form action="bexercise.htm">>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Which Hours  Are You Available?</label><br>
+<input type="time" id="appt" name="appt"
+       min="09:00" max="18:00" required>
+           <label>-</label>
+           <input type="time" id="appt" name="appt"
+       min="09:00" max="18:00" required>
+  </div>
+
+<label for="start">Start date:</label>
+
+<input type="date" id="start" name="trip-start"
+       value="2020-01-01"
+       min="2018-01-01" max="2020-12-31"><br>
+  
+Type Your Activity:<br> 
+  
+<input type="activity" name="activity">
+  
+<p>Importance</p> 
+   <label for="quantity">(between 1 and 5):</label>
+<input type="number" id="quantity" name="quantity" min="1" max="5"> 
+<BR>
+Type Your Activity:<br> 
+  
+<input type="activity" name="activity">
+  
+<p>Importance</p> 
+   <label for="quantity">(between 1 and 5):</label>
+<input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+Type Your Activity:<br> 
+  
+<input type="activity" name="activity">
+  
+<p>Importance</p> 
+   <label for="quantity">(between 1 and 5):</label>
+<input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+
+
+<button >Add</button> <br><br>
+
+
+<p><strong>Note:</strong> Because of security issues, this example will not allow you to upload files.</p>
+<br>
+         <button type="submit" class="btn btn-primary">Submit</button><br>
+
+</form>
+</center>
+<script type="text/javascript">
+	var url = window.location.toString().split(".htm?");
+	var values = url[1].split("&");
+	alert(values[0]);
+	alert(values[1])
+</script>
+   </body>
+</html>
